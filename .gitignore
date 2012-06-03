@@ -1,0 +1,9 @@
+*.out
+*.lof
+*.aux
+*.log
+*~
+*.pdf
+*.kilepr
+*.backup
+*.toc
