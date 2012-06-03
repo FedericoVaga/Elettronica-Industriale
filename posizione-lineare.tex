@@ -10,13 +10,15 @@ la rappresentazione circuitale.
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=0.5]{img/filoavvolto.png}
+	\includegraphics[scale=0.5]
+			{img/filoavvolto.png}
 	\caption{Potenziometro a filo avvolto\label{fig:filoavvolto}}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=0.5]{img/potenziometro.pdf}
+	\includegraphics[scale=0.5]
+			{img/potenziometro.pdf}
 	\caption{Potenziometro\label{fig:potenziometro}}
 \end{figure}
 
@@ -28,7 +30,8 @@ destra del cursore come in figura \ref{fig:potenziometroequiv}.
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=0.5]{img/potenziometro-equiv.pdf}
+	\includegraphics[scale=0.5]
+			{img/potenziometro-equiv.pdf}
 	\caption{Circuito equivalente
 per il potenziometro\label{fig:potenziometroequiv}}
 \end{figure}
@@ -71,7 +74,8 @@ il cursore.
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=0.5]{img/potenziometro-carbonio.pdf}
+	\includegraphics[scale=0.5]
+			{img/potenziometro-carbonio.pdf}
 	\caption{Potenziometro a
 strato di carbonio\label{fig:potenziometro-carbonio}}
 \end{figure}
@@ -91,7 +95,8 @@ una striscia di materiale foto-conduttore e del materiale conduttore.
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=0.5]{img/fotopotenziometro.png}
+	\includegraphics[scale=0.5]
+			{img/fotopotenziometro.png}
 	\caption{Foto-potenziometro\label{fig:fotopotenziometro}}
 \end{figure}
 
@@ -131,7 +136,7 @@ equivalente.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.5]
-{img/potenziometro-capacitivo-equiv.pdf}
+			{img/potenziometro-capacitivo-equiv.pdf}
 	\caption{Circuito equivalente
 del trasduttore capacitivo\label{fig:potcapacitivoequiv}}
 \end{figure}
@@ -173,7 +178,7 @@ $C=KX$ e quindi anche l'impedenza.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.5]
-{img/potenziometro-capacitivo-2.png}
+			{img/potenziometro-capacitivo-2.png}
 	\caption{Potenziometro
 capacitivo alternativo\label{fig:potcapacitivoalt}}
 \end{figure}
@@ -188,7 +193,7 @@ si muove fra il primario e il secondario.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.5]
-{img/trasformatore-differenziale.png}
+			{img/trasformatore-differenziale.png}
 	\caption{Trasformatore differenziale\label{fig:trasdiff}}
 \end{figure}
 
@@ -235,9 +240,71 @@ uscita.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.5]
-{img/trasformatore-differenziale-fase.png}
+			{img/trasformatore-differenziale-fase.png}
 	\caption{Segnale in uscita da un trasformatore
 differenziale\label{fig:trasdifffase}}
 \end{figure}
 
 \section{Trasduttore ad induttanza variabile}
+Vengono posti in vicinanza due pezzi di materiale ferromagnetico, uno
+a ferro di cavallo e l'altro a forma di barretta; quest'ultima è
+mobile, quindi è possibile avvicinarla o allontanarla misurando così
+lo spostamento.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.5]
+			{img/induttanza-variabile.png}
+	\caption{Trasduttore ad induttanza
+variabile\label{fig:trasdifffase}}
+\end{figure}
+
+Possiamo ora calcolare la riluttanza del circuito ferromagnetico;
+teniamo conto però solo dei tratti $L_5$ ed $L_3$ in quanto gli unici
+significativi per la determinazione della distanza ($S$ indica la
+sezione del ramo e $\mu$ la permeabilità, $\mu_0$ la permeabilità
+del vuoto).
+
+	\[\Re=\sum_i{\frac{L_i}{S_im_i}}\]
+	\[\Re=\frac{L_2}{S_2\mu_3} + \frac{L_5}{S_5\mu_5}
+	     =2\frac{X}{S\mu_0}\]
+
+La riluttanza può essere misurata avvolgendo un certo numero di spire
+attorno al ramo $L_1$; le spire vengono disposte con una densità $n$.
+Ne risulta che l'induttanza corrisponde a:
+
+	\[
+	L=\frac{n\phi}{I}
+	 =\frac{\frac{n^2i}{\Re}}{i}
+	 =\frac{n^2}{\Re}
+	 =\frac{n^2S\mu_0}{2X}
+	\]
+Da qui possiamo ricavare l'ammettenza:
+
+	\[Y=Z^{-1}=\frac{1}{\omega L}=\frac{2X}{\omega n^2S\mu_0}\]
+
+Ne consegue che alimentando il circuito e misurando la
+corrente $I=VY$, questa varierà al variare della distanza $X$
+
+\subsection{Vantaggi}
+La possibilità di regolare l'impedenza variando il numero di
+spire avvolte sul materiale ferromagnetico (su $L_1$ per la
+precisione) e la possibilità di fare misure di induttanza a frequenze
+relativamente basse.
+\subsection{Svantaggi}
+La linearità peggiora più ci si allontana dal nucleo e
+problemi di misura in alternata. Inoltre in corrente alternata abbiamo
+problemi di misura.
+
+\subsection{Trasduttore ad induttanza variabile alternativo}
+Per colmare il difetto della linearità è possibile porre la barra
+ferromagnetica fra due ferri di cavallo di modo che se peggiora
+allontanandosi da uno, migliora avvicinandosi all'altro.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.5]
+			{img/induttanza-variabile-2.png}
+	\caption{Trasduttore ad induttanza
+variabile alternativo\label{fig:trasdifffase}}
+\end{figure}
