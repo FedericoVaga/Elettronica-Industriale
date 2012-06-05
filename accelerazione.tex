@@ -1,0 +1,49 @@
+\section{Accelerometro massa-molla}
+Consiste in una scatola in cui è presente una piccola massa che può
+muoversi orizzontalmente e che è soggetta ad un'azione di richiamo da
+parte di una molla; nello stesso contenitore è presente un trasduttore
+di posizione lineare che misura la posizione della massa. Indicando
+con $x$ lo spostamento relativo della massa $m$ e applicando le leggi
+della fisica per le molle ($k$ costante elastica della molla) possiamo
+facilmente ricavare l'accelerazione $a$:
+
+	\[F=ma=-kx \Rightarrow x=-\frac{ma}{k}\]
+
+Data che c'è proporzionalità fra lo spostamento $x$ e l'accelerazione
+$a$, possiamo definire la sensibilità del trasduttore come rapporto
+fra lo spostamento e l'accelerazione:
+
+	\[x=-\frac{ma}{k} \Rightarrow \frac{x}{a}=-\frac{m}{k}\]
+
+\section{Servo-accelerometro}
+Un servo-accelerometro è costituito da una massa $m$ collegata ad un
+motore in continua $C$ di modo da far oscillare il rotore del motore.
+Quando la massa subisce un'accelerazione questa si sposta e genera
+una coppia proporzionale all'accelerazione. Un trasduttore di
+posizione lineare rileva lo spostamento della massa rispetto alla sua
+posizione di riposo; il segnale in uscita da questo trasduttore è
+applicato ad un amplificatore la cui corrente in uscita è applicata
+al motore che genera una coppia uguale e contraria a quella fornita
+dalla massa. In questo modo la massa ritorna alla sua posizione di
+riposto. La tensione misurata sul carico situalo fra il motore e
+l'amplificatore ci darà una tensione proporzionale all'accelerazione.
+
+\section{Accelerometro piezoelettrico}
+Il principio alla base di un accelerometro piezoelettrico è lo stesso
+del massa-molla con l'aggiunta di un cilindretto di materiale
+piezoelettrico che assolve le funzioni di richiamo della molla e di
+misurazione dello spostamento.
+%FIXME trattazione fisica del piezo
+
+\section{Accelerometro MEMS}
+Gli accelerometri di questo tipo sono realizzati con tecnologia MEMS
+(Micro-Electro-Mechanical-System). Questo tipo di tecnologia permette
+di realizzare sensori, attuatori e altri dispositivi elettrinici
+mediante un processo di lavorazione di uno strato di silicio.
+Un accelerometro di tipo MEMS ha lo stesso principio del massa-molla
+ma è realizzato mediante l'uso di gas. All'interno dell'accelerometro
+viene creata un piccola bolla di gas riscaldato che si muove in
+funzione degli spostamenti. Mediante dei sistemi di misurazione della
+temperatura, distribuiti dentro all'accelerometro, è possibile
+individuare lo spostamento della bolla quindi ricavare l'accelerazione
+che ne ha generato lo spostamento.
